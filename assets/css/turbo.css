@@ -1,0 +1,328 @@
+#loader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000; /* Keep it on top */
+            width: 250px;  /* Adjust size as needed */
+        }
+
+.hidden-content {
+    visibility: hidden;
+}
+
+.visible-content {
+    visibility: visible;
+}
+
+div#loader img {
+    width: 100%;
+}
+
+.new-arrivals .product-review,
+.hot-deals .product-review{
+    margin-top: -7px !important;
+    margin-bottom: 5px;
+}
+
+.contactInfo span {
+    font-weight: 600;
+}
+
+h5.subscribeTitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.footer-widget-contact {
+    padding-left: 70px;
+}
+
+label.checkbox-default.mb-20 span {
+    margin-top: 3px;
+}
+
+.company-logo-slider:hover .default-slider-arrow {
+    visibility: visible;
+    opacity: 1;
+}
+.company-logo-slider:hover .default-slider-arrow--left {
+    left: 0;
+}
+.company-logo-slider:hover .default-slider-arrow--right {
+    right: 0;
+}
+
+.slick-slide img {
+    margin: 0px auto 0px auto;
+}
+
+.errorPage {
+    width: 60%;
+    margin-bottom: 35px;
+}
+
+.error_form {
+    margin-bottom: 100px;
+}
+
+.hero-area {
+    margin-bottom: 100px;
+}
+
+div#pageWithLoader {
+    height: 100%;
+}
+
+.indexFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+}
+
+.subcatego {
+    display: none; /* Hide subcategories by default */
+    margin-left: 50px; /* Adjust this value to move the subcategories to the right */
+}
+
+ul.subcatego li {
+    margin-top: 15px;
+}
+.fa-sort-down,
+.fa-sort-up {
+    position: absolute;
+    top: 4px; /* Adjust as needed */
+    right: -20px; /* Adjust as needed */
+    font-size: 1em; /* Adjust font size as needed */
+    transition: opacity 0.3s ease; /* Smooth transition for icon change */
+}
+
+.fa-sort-down {
+    display: inline; /* Display initially */
+    top: -2px;
+}
+
+.fa-sort-up {
+    display: none; /* Hide initially */
+}
+
+.category-checkbox:checked ~ span .fa-sort-down {
+    display: none; /* Hide when checkbox is checked */
+}
+
+.category-checkbox:checked ~ span .fa-sort-up {
+    display: inline; /* Show the up icon when checkbox is checked */
+}
+
+.service {
+    width: 100%;
+    height: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service img {
+    width: 43px;
+    height: 43px;
+    float: left;
+    margin-top: -14px;
+}
+
+
+.service-caption {
+    float: left;
+    margin-left: 7%;
+}
+
+.service-caption span {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    color: #000;
+}
+
+.service-caption p {
+    color: darkgrey;
+    font-size: 15px;
+}
+
+.service-caption p {
+    color: darkgrey;
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column; /* Stack img and caption vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100%; /* Ensure it takes full height of the parent */
+  text-align: center; /* Align text inside the service-caption */
+}
+
+.services-content-gap {
+    margin-right: 15px;
+}
+
+.row.boxShadow {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 30px 0px 20px 0px;
+}
+
+
+/******************* Account Form *********************/
+.loginBackground {
+    height: 100%;
+    width: 100%;
+    background: url(../images/login/LoginBack2.jpg);
+    background-size: 100% 100%;
+    background-position: top;
+    position: relative;
+}
+
+.loginWrapper {
+    background: white;
+    height: 700px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+                rgba(17, 17, 26, 0.1) 0px 16px 56px, 
+                rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        
+        /*  rgba(255, 255, 255, 0.1) 0px 8px 24px, 
+            rgba(255, 255, 255, 0.1) 0px 16px 56px, 
+            rgba(255, 255, 255, 0.1) 0px 24px 80px;*/
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.customer_login {
+    padding-top: 90px;
+}
+
+.imageLogin img {
+    height: 700px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: -2%;
+}
+
+img.loginLogo {
+    margin: 0px auto;
+    display: block;
+}
+
+.account_form {
+    position: absolute;
+    top: 12%;
+    width: 46%;
+}
+
+.account_form h3 {
+    font-size: 17px;
+        text-align: center;
+}
+
+/************************* Footer ****************************/
+
+.mainPage .footer-bottom {
+    padding: 0px; 
+    background: #f8f9fa;
+    height: 40px;
+}
+
+.indexPage .footer-bottom {
+    padding: 0px; 
+    height: 40px;
+}
+
+.copyright-link {
+    color: black;
+    text-transform: uppercase;
+}
+
+/***************** Bottom Switcher Slider *******************/
+
+
+
+.imageLogin {
+    
+    height: 700px;
+    background: url(../images/login/loginLeftImg3.png);
+    position: relative;
+    background-size: 100% 100%;
+      border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/***************** Top Switcher Slider *******************/
+
+/* Switcher Styles */
+.switcherSlider,
+.imageLogin{
+  transition: background-image 0.3s ease;
+}
+
+/* Navigation Styles */
+.backSwitcher ul, 
+.leftImgSwitcher ul  
+
+{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.backSwitcher ul li, 
+.leftImgSwitcher ul li 
+{
+  display: inline-block;
+}
+
+.backSwitcher ul li a, 
+.leftImgSwitcher ul li a {
+    text-decoration: none;
+    color: #ebba31;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.backSwitcher ul li a:hover, 
+.leftImgSwitcher ul li a:hover {
+    background-color: #ebba31;
+    color: white;
+}
+
+.backSwitcher {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 605px;
+    transform: translate(-50%);
+}
+
+.leftImgSwitcher {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 103px;
+    transform: translate(-50%);
+}
+
+.activey {
+    
+    background-color: #ebba31 !important;
+    color: white !important;
+}
+
+/***************** Bottom Switcher Slider *******************/
+
+
+
