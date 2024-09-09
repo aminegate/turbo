@@ -11710,7 +11710,6 @@ input {
 .banner-img {
     -o-object-fit: cover;
     object-fit: cover;
-    width: 100%;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     -webkit-transform: scale(1);
@@ -11735,13 +11734,7 @@ input {
         height: auto;
     }
 }
-.banner-content {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+
 .banner-text-tiny {
     display: block;
     font-size: 16px;
@@ -11751,7 +11744,7 @@ input {
 .banner-text-small {
     display: block;
     font-size: 18px;
-    color: #4e4e4e;
+    color: white;
     font-weight: 500;
 }
 .banner-text-large {
