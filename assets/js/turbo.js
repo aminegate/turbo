@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const loginBackground = document.querySelector('.loginBackground');
 
     const images = [
-        'url("assets/images/login/LoginBack2.jpg")',
         'url("assets/images/login/LoginBack.jpg")',
+        'url("assets/images/login/LoginBack2.jpg")',
         'url("assets/images/login/LoginBack7.jpg")',
         'url("assets/images/login/LoginBack3.jpg")',
         'url("assets/images/login/LoginBack5.jpg")',
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const loginBackground = document.querySelector('.imageLogin');
 
     const images = [
-        'url("assets/images/login/loginLeftImg3.png")',
+        'url("assets/images/login/loginLeftImg.jpg")',
         'url("assets/images/login/loginLeftImg2.png")',
-        'url("assets/images/login/loginLeftImg.jpg")'
+        'url("assets/images/login/loginLeftImg3.png")'
         
  
     ];
@@ -71,6 +71,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $(document).ready(function() {
         
+       $('.service-caption span').hover(
+            function() {
+                // On hover, move the wave and change opacity
+                $(this).closest('.service').find('.wave').css('top', '0%');
+                $(this).closest('.service').find('.offer, .safe, .fast, .star').css('opacity', '0');
+                $(this).closest('.service').find('.offer-white, .safe-white, .fast-white, .star-white').css('opacity', '1');
+            },
+            function() {
+                // On hover out, reset the wave's position and opacity
+                $(this).closest('.service').find('.wave').css('top', '110%');
+                $(this).closest('.service').find('.offer, .safe, .fast, .star').css('opacity', '1');
+                $(this).closest('.service').find('.offer-white, .safe-white, .fast-white, .star-white').css('opacity', '0');
+            }
+        );
         
           // Function to handle login
     function handleLogin(event) {

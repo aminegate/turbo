@@ -164,6 +164,44 @@
             },
         ]
     });
+    
+    
+    /************************************************
+     * Company logo Slider
+     ***********************************************/
+ $('.banner-default-slider').slick({
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 1,
+        easing: 'ease-out',
+        speed: 1000,
+        autoplay: true,
+        prevArrow: '<button type="button" class="default-slider-arrow default-slider-arrow--left prevArrow"><i class="fa fa-angle-left"></button>',
+        nextArrow: '<button type="button"  class="default-slider-arrow default-slider-arrow--right nextArrow"><i class="fa fa-angle-right"></button>',
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
 
     /***********************************
     * Gallery - Horizontal
