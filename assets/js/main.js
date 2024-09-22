@@ -167,7 +167,7 @@
     
     
     /************************************************
-     * Company logo Slider
+     * Banner Slider
      ***********************************************/
  $('.banner-default-slider').slick({
         arrows: true,
@@ -394,17 +394,21 @@
     /************************************************
      * Price Slider
      ***********************************************/
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [ 75, 300 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-      });
-      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $(function() {
+  $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [75, 300],
+    slide: function(event, ui) {
+      $("#amount").val(ui.values[0] + " DH - " + ui.values[1] + " DH");
+    }
+  });
+
+  // Set the initial value of the amount
+  $("#amount").val($("#slider-range").slider("values", 0) + " DH - " +
+    $("#slider-range").slider("values", 1) + " DH");
+});
 
 
     /************************************************
