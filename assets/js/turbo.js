@@ -75,7 +75,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function() {
     
-    
+      // Function to get the search term from the URL
+    function getSearchTerm() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('q'); // Assuming the query parameter for the search term is 'q'
+    }
+
+    // Get the search term and display it
+    const searchTerm = getSearchTerm();
+    if (searchTerm) {
+      $('#search-term').text(searchTerm);
+    } else {
+      $('#search-term').text('Aucun terme de recherche trouvé.');
+    }
 
    
 
