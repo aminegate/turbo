@@ -12,6 +12,36 @@
     padding-top: 100px;
 }
 */
+h1.resultsTitle {
+    font-size: 17px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+p.resultsDescription {
+    margin-bottom: 40px;
+}
+
+.titleSection {
+    width: 80%;
+    display: inline-block;
+}
+
+.results-list {
+    float: right;
+    clear: left;
+}
+
+
+
+.searchResult {
+    padding: 100px 0px;
+}
+.searchResult .product-default-single {
+    margin-bottom: 30px;
+}
+
 .categoListGrid  {
     padding: 110px 0px 115px 0px;
 }
