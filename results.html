@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turbo</title>
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+    <!-- Vendor CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/plaza-icon.css">
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css"> -->
+
+    <!-- Plugin CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css"> -->
+
+    <!-- Main CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/turbo.css">
+
+</head>
+
+<body> 
+
+   
+        	<div class="progress-wrap">
+        	    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        	        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        	    </svg>
+        	</div>
+        
+    
+        <!-- ...:::: Start Header Section:::... -->
+        <header class="header-section d-lg-block d-none">
+            <!-- Start Header Top Area -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div class="header-top--left">
+                                <span>Bienvenue chez Turbo</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="header-top--right">
+                                <!-- Start Header Top Menu -->
+                                <ul class="header-user-menu">
+                                   <li class="has-user-dropdown">
+                                       <div class="colorSwitch">
+                                           <a href="#">Choisissez une couleur</a>
+                                          <ul class="color-grid user-sub-menu">
+    <li class="color-option is-selected" data-color="#ebba31"></li>
+    <li class="color-option" data-color="#5B00B7"></li>
+    <li class="color-option" data-color="#34c400"></li>
+  </ul>
+                                     </div>
+                                      
+                                    </li>
+                                   
+                                    <li class="has-user-dropdown">
+                                        <a href="#">Paramètres</a>
+                                        <!-- Header Top Menu's Dropdown -->
+                                        <ul class="user-sub-menu">
+                                            <li><a href="my-account.html#scroll-target">Mon Compte</a></li>
+                                            <li><a href="cart.html#scroll-target">Panier</a></li>
+                                            <li><a href="wishlist.html#scroll-target">Wishlist</a></li>
+                                            <li><a href="#">Déconnexion</a></li>
+                                        </ul>
+                                    </li>
+                                </ul> <!-- End Header Top Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Header Top Area -->
+
+            <!-- Start Header Center Area -->
+            <div class="header-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-3">
+                            <!-- Logo Header -->
+                            <div class="header-logo">
+                                <a href="main.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <!-- Start Header Search -->
+                            <div class="header-search">
+                                <form action="results.html" method="get" id="search-form">
+                                    <div class="header-search-box default-search-style d-flex">
+                                        <input id="search-query" name="q" class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Recherchez dans tout le magasin ici ..." required>
+                                        <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div> <!-- End Header Search -->
+                        </div>
+                        <div class="col-3 text-end">
+                            <!-- Start Header Action Icon -->
+                            <ul class="header-action-icon">
+                                <li>
+                                    <a href="#offcanvas-wishlish" class="offcanvas-toggle">
+                                        <i class="icon-heart"></i>
+                                        <span class="header-action-icon-item-count">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#offcanvas-add-cart" class="offcanvas-toggle">
+                                        <i class="icon-shopping-cart"></i>
+                                        <span class="header-action-icon-item-count">3</span>
+                                    </a>
+                                </li>
+                            </ul> <!-- End Header Action Icon -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Header Center Area -->
+
+            <!-- Start Bottom Area -->
+            <div class="header-bottom sticky-header">
+                <div class="container">
+                    <div class="row">
+                            <!-- Header Main Menu -->
+                            <div class="dropDownCatego col-lg-3">
+                                                <a href="shop-grid-sidebar-left.html#scroll-target" class="dropDownCatego-name"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Catégories populaires</a>
+                                                        <ul class="hoverToOpen">
+                                                            <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">ACCOUDOIRE<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                  <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat01.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez l'accoudoir</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                            
+                                                            
+                                                             <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">CEINTURE<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat02.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez la ceinture</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                             
+                                                             
+                                                              <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">BALAIS<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat03.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez le balai</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                             
+                                                             
+                                                             
+                                                              <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">VOLANT<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                  <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat04.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez le volant</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                             
+                                                             
+                                                              <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">DEFLECTEUR<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat05.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez le deflecteur</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                             
+                                                             
+                                                             
+                                                              <li>
+                                                                <a href="shop-grid-sidebar-left.html#scroll-target">ENJOLIVEUR<i class="fa-solid fa-angle-right"></i></a>
+                                                                <ul class="has-submenu">
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 1</span>
+
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                  <span>Sous-catégorie 2</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                   <li class="has-submenu-wrapper">
+                                                                   <span>Sous-catégorie 3</span>
+                                                                    <a href="#">Item 1</a>
+                                                                    <a href="#">Item 2</a>
+                                                                    <a href="#">Item 3</a>
+                                                                    <a href="#">Item 4</a>
+                                                                    <a href="#">Item 5</a>
+                                                                   </li>
+                                                                    <li class="has-submenu-wrapper">
+                                                                        <a href="#" class="menu-catego-link"></a>
+                                                                        <img src="assets/images/menu/cat06.jpg" alt="category-image" class="menu-catego-deal">
+                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                                                            <span class="catego-text-two">Achetez l'enjoliveur</span>
+                                                                            <span class="catego-price">À partir de 140DH</span>
+                                                                        <button class="shopNow">Achetez Maintenant</button>
+                                                                    </li>  
+                                                              </ul>
+                                                            </li>
+                                                              
+                                                            
+                                                            
+                                                      
+                                                   
+                                                </ul>
+                                            </div>
+                            
+                            <div class="main-menu col-lg-7">
+                                <nav>
+                                    <ul class="navMenu">
+                                        <li class="has-dropdown">
+                                            <a class="active home-menu-link" href="main.html">Accueil</a>
+                                            <!-- Sub Menu 
+                                        <ul class="sub-menu">
+                                        </ul>-->
+                                        </li>
+                                        <li>
+                                            <a href="category.html#scroll-target">Catégorie</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Promotions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Nouveautés</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html#scroll-target">Contact</a>
+                                        </li>
+                                        
+                                        
+                                        <li>
+                                            <a href="#">Autres Pages</a>
+                                            <ul class="sub-menu">
+                                                    <li><a href="404.html#scroll-target">404 Page</a></li>
+                                                    <li><a href="checkout.html#scroll-target">Page de paiement</a></li>
+                                                </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div> <!-- Header Main Menu Start -->
+                            
+                            
+                                           <div class="menu-call col-lg-2">
+                                              <div class="menu-call-container">
+                                               <div class="menu-call-icon"><i class="fa-solid fa-headset"></i></div>
+                                                <div class="menu-call-wrapper">
+                                                    <span>05 22 44 39 26</span>
+                                                    <span>Appelez-nous</span>
+                                                </div>
+                                                </div>
+                                            </div>
+                    </div>
+                </div>
+            </div> <!-- End Bottom Area -->
+        </header> <!-- ...:::: End Header Section:::... -->
+        
+           <!-- ...:::: Start side widget Addcart Section :::... -->
+    <div id="offcanvas-add-cart" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
+        <!-- Start Offcanvas Header -->
+        <div class="offcanvas-header text-end">
+            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+        </div> <!-- End side widget Header -->
+
+        <!-- Start  side widget Addcart Wrapper -->
+        <div class="offcanvas-add-cart-wrapper">
+           <h4 class="offcanvas-title">Panier</h4>
+
+            <ul class="offcanvas-cart">
+                <li class="offcanvas-cart-item-single">
+                    <div class="offcanvas-cart-item-block">
+                        <a href="#" class="offcanvas-cart-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_7.jpg" alt="" class="offcanvas-cart-image">
+                        </a>
+                        <div class="offcanvas-cart-item-content">
+                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-cart-item-details">
+                                <span class="offcanvas-cart-item-details-quantity">1 x </span>
+                                <span class="offcanvas-cart-item-details-price">149.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-cart-item-delete text-end">
+                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+                <li class="offcanvas-cart-item-single">
+                    <div class="offcanvas-cart-item-block">
+                        <a href="#" class="offcanvas-cart-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_4.jpg" alt="" class="offcanvas-cart-image">
+                        </a>
+                        <div class="offcanvas-cart-item-content">
+                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-cart-item-details">
+                                <span class="offcanvas-cart-item-details-quantity">3 x </span>
+                                <span class="offcanvas-cart-item-details-price">500.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-cart-item-delete text-end">
+                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+                <li class="offcanvas-cart-item-single">
+                    <div class="offcanvas-cart-item-block">
+                        <a href="#" class="offcanvas-cart-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_5.jpg" alt="" class="offcanvas-cart-image">
+                        </a>
+                        <div class="offcanvas-cart-item-content">
+                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-cart-item-details">
+                                <span class="offcanvas-cart-item-details-quantity">1 x </span>
+                                <span class="offcanvas-cart-item-details-price">250.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-cart-item-delete text-end">
+                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="offcanvas-cart-total-price">
+                <span class="offcanvas-cart-total-price-text">Sous-total :</span>
+                <span class="offcanvas-cart-total-price-value">1899.00 DH</span>
+            </div>
+            <ul class="offcanvas-cart-action-button">
+               <li class="offcanvas-cart-action-button-list"><a href="cart.html" class="offcanvas-cart-action-button-link">Voir le panier</a></li>
+<li class="offcanvas-cart-action-button-list"><a href="checkout.html" class="offcanvas-cart-action-button-link">Passer à la caisse</a></li>
+
+            </ul>
+        </div> <!-- End  side widget Addcart Wrapper -->
+
+    </div> <!-- ...:::: End  side widget Addcart Section :::... -->
+
+    <!-- ...:::: Start side widget wishlist Section:::... -->
+    <div id="offcanvas-wishlish" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
+        <!-- Start Offcanvas Header -->
+        <div class="offcanvas-header text-end">
+            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+        </div> <!-- ENd Offcanvas Header -->
+
+        <!-- Start side widget wishlist Wrapper -->
+        <div class="offcanvas-wishlist-wrapper">
+            <h4 class="offcanvas-title">Wishlist</h4>
+            <ul class="offcanvas-wishlist">
+                <li class="offcanvas-wishlist-item-single">
+                    <div class="offcanvas-wishlist-item-block">
+                        <a href="#" class="offcanvas-wishlist-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_1.jpg" alt="" class="offcanvas-wishlist-image">
+                        </a>
+                        <div class="offcanvas-wishlist-item-content">
+                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-wishlist-item-details">
+                                <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
+                                <span class="offcanvas-wishlist-item-details-price">349.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-wishlist-item-delete text-end">
+                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+                <li class="offcanvas-wishlist-item-single">
+                    <div class="offcanvas-wishlist-item-block">
+                        <a href="#" class="offcanvas-wishlist-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_3.jpg" alt="" class="offcanvas-wishlist-image">
+                        </a>
+                        <div class="offcanvas-wishlist-item-content">
+                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-wishlist-item-details">
+                                <span class="offcanvas-wishlist-item-details-quantity">3 x </span>
+                                <span class="offcanvas-wishlist-item-details-price">500.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-wishlist-item-delete text-end">
+                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+                <li class="offcanvas-wishlist-item-single">
+                    <div class="offcanvas-wishlist-item-block">
+                        <a href="#" class="offcanvas-wishlist-item-image-link">
+                            <img src="assets/images/products_images/aments_products_image_2.jpg" alt="" class="offcanvas-wishlist-image">
+                        </a>
+                        <div class="offcanvas-wishlist-item-content">
+                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                            <div class="offcanvas-wishlist-item-details">
+                                <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
+                                <span class="offcanvas-wishlist-item-details-price">350.00 DH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-wishlist-item-delete text-end">
+                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="offcanvas-wishlist-action-button">
+                <li class="offcanvas-wishlist-action-button-list"><a href="wishlist.html" class="offcanvas-wishlist-action-button-link">Voir la Wishlist</a></li>
+
+            </ul>
+        </div> <!-- End side widget wishlist Wrapper -->
+
+    </div> <!-- ...:::: End side widget wishlist Section:::... -->
+
+        <!-- ...:::: Start Hero Area Section:::... -->
+        <div class="hero-area hideForNow">
+            <div class="hero-area-wrapper hero-slider-dots fix-slider-dots">
+                <!-- Start Hero Slider Single -->
+                <div class="hero-area-single">
+                    <div class="hero-area-bg">
+                        <img class="hero-img" src="assets/images/slider_images/home_1/aments_home_1_slider_1.jpg" alt="">
+                    </div>
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 col-md-8 col-xl-6">
+                                    <h5>Meilleure qualité mondiale</h5>
+<h2>Volant Lorem Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+<a href="product-details-variable.html#scroll-target" class="hero-button">Achetez maintenant</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Hero Slider Single -->
+                <!-- Start Hero Slider Single -->
+                <div class="hero-area-single">
+                    <div class="hero-area-bg">
+                        <img class="hero-img" src="assets/images/slider_images/home_1/aments_home_1_slider_2.jpg" alt="">
+                    </div>
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 col-md-8 col-xl-6">
+                                  <h5>Meilleure qualité mondiale</h5>
+<h2>Enjoliveurs Lorem Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+<a href="product-details-variable.html#scroll-target" class="hero-button">Achetez maintenant</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Hero Slider Single -->
+            </div>
+        </div> <!-- ...:::: End Hero Area Section:::... -->
+
+
+
+<div class="searchResult">
+    <div class="container">
+       
+       <div class="resultsInfoWrapper">
+        <div class="titleSection">
+            <h1 class="resultsTitle">Résultats de recherche pour : <span id="search-term"></span></h1>
+            <p class="resultsDescription">Vérifiez chaque page produit pour d'autres options d'achat. Le prix et d'autres détails peuvent varier en fonction de la taille et de la couleur du produit.</p>
+        </div>
+        <div class="sort-select-list results-list">
+            <form action="#">
+                <fieldset>
+                    <select name="speed" id="speed">
+                        <option>Tri par note moyenne</option>
+                        <option>Tri par popularité</option>
+                        <option selected="selected">Tri par nouveauté</option>
+                        <option>Tri par prix : du moins cher au plus cher</option>
+                        <option>Tri par prix : du plus cher au moins cher</option>
+                        <option>Nom du produit : A - Z</option>
+
+                    </select>
+                </fieldset>
+            </form>
+          </div> <!-- End Sort Select Option --->
+        </div>
+        
+        
+        
+        
+         <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_1.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                               <img src="assets/images/results/turbo_products_image_12.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                              <img src="assets/images/results/turbo_products_image_8.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                              <img src="assets/images/results/turbo_products_image_11.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_2.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_4.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_5.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_6.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_7.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_8.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_9.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_10.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_11.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_12.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_4.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_7.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_1.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="product-default-content">
+                         <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                         <div class="product-review">
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-fill"><i class="fa fa-star"></i></span>
+                             <span class="review-empty"><i class="fa fa-star"></i></span>
+                         </div>
+                         <span class="product-default-price">150.00 DH</span>
+                         <div class="inventoryStatu">
+                             <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                         </div>
+                         <div class="productOnHover">
+
+                             <div class="quantity">
+                                 <ul>
+                                     <li><button class="minus" aria-label="Decrease">&minus;</button></li>
+                                     <li><input type="number" class="input-box" value="1" min="1" max="10"></li>
+                                     <li><button class="plus" aria-label="Increase">&plus;</button></li>
+
+                                 </ul>
+                             </div>
+
+                             <div class="addToCartWrapper">
+                                 <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+                 <!-- Start Pagination -->
+                    <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
+                        <ul>
+                            <li><a href="#">Précédent</a></li>
+<li><a class="active" href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">Suivant</a></li>
+
+                        </ul>
+                    </div> <!-- End Pagination -->
+         </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ...:::: Start Footer Section:::... -->
+        <footer class="footer-section section-top-gap-100">
+            <!-- Start Footer Top Area -->
+            <div class="footer-top section-inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-5">
+                            <div class="footer-widget footer-widget-information" data-aos="fade-up" data-aos-delay="0">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/images/logo/logo.png" alt="" class="img-fluid"></a>
+                                </div>
+                                <div class="footer-contact">
+                                    <p>Turbo, fondée en 2006 à Casablanca, est un leader du marché des accessoires automobiles. Avec une équipe expérimentée, nous offrons des prestations de haute qualité et un large choix de produits au meilleur prix.</p>
+                                    <ul class="footer-social">
+                                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="capram"><i class="fa-solid fa-globe"></i></a></li>
+
+                                    </ul>
+                                    <h5 class="subscribeTitle">Abonnez-vous à la newsletter pour rester informé</h5>
+                                <form action="#" method="post">
+                                    <div class="footer-subscribe-box default-search-style d-flex">
+                                        <input class="default-search-style-input-box border-around border-right-none subscribe-form" type="email" placeholder="Entrez votre email ici.." required>
+                                        <button class="default-search-style-input-btn" type="submit">S'abonner</button>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-7">
+                            <div class="footer-widget footer-widget-contact" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="footer-widget-title">Information</h3>
+                                <div class="contactInfo">
+                                    <ul>
+                                        <li> <span>ADDRESS</span>
+                                            <p>18-22 Boulevard de Khouribga, Casablanca 20250, Morocco</p>
+                                        </li>
+                                        <li> <span>PHONE</span>
+                                            <p>(+212) 05 22 44 39 26 / (+212) 05 22 44 83 91</p>
+                                        </li>
+                                        <li> <span>EMAIL</span>
+                                            <p>sales@ecommerce.turbo-accessories.com</p>
+                                        </li>
+                                        <li> <div class="footer-menu">
+                                    <ul class="footer-menu-nav">
+                                        <li><a href="main.html">Accueil</a></li>
+                                        <li><a href="contact-us.html#scroll-target">Contactez-nous</a></li>
+                                    </ul>
+                                    <ul class="footer-menu-nav">
+                                        <li><a href="#">Promotions</a></li>
+                                        <li><a href="my-account.html#scroll-target">Mon Compte</a></li>
+                                    </ul>
+                                </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 positionRelative">
+                            <div class="footer-widget footer-widget-timeline" data-aos="fade-up" data-aos-delay="600">
+                                
+                                
+                                <div class="timeInDays">
+                                  <span class="slashes">//&nbsp;<span class="slashesText">Venez nous rendre visite</span></span>
+                                   <h3>Horaires d'ouverture</h3>
+                                    <ul>
+                                        <li><span>Lundi</span><span>08:30AM - 18:30PM</span></li>
+                                        <li><span>Mardi</span><span>08:30AM - 18:30PM</span></li>
+                                        <li><span>Mercredi</span><span>08:30AM - 18:30PM</span></li>
+                                        <li><span>Jeudi</span><span>08:30AM - 18:30PM</span></li>
+                                        <li><span>Vendredi</span><span>08:30AM - 18:30PM</span></li>
+                                        <li><span>Samedi</span><span>08:30AM - 13:00PM</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Footer Top Area -->
+            <!-- Start Footer Bottom Area -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="copyright-area">
+                                <p class="copyright-area-text">Copyright &copy; <span id="copyright-year"></span> <a class="copyright-link" href="main.html">Turbo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Footer Bottom Area -->
+        </footer> <!-- ...:::: End Footer Section:::... -->
+
+
+
+        <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+        <!-- Global Vendor, plugins JS -->
+        <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script> -->
+
+        <!--Plugins JS-->
+        <!-- <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script>
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/aos.min.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script> -->
+
+        <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/plugins.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/turbo.js"></script>
+
+</body>
+
+
+</html>
