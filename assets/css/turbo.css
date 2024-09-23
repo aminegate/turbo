@@ -104,7 +104,6 @@ video {
 
 #scroll-target:target {
 
-    position: relative;
     border-top: 130px solid transparent;
     margin: -130px 0 0;
     background-clip: padding-box;
@@ -630,7 +629,7 @@ div.countdown li span {
 
 .section-top-gap-100.hot-deals {
     background-position: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url(../images/bg/carback.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/bg/carback.jpg);
     background-size: cover;
     padding-bottom: 0px;
     background-position: -60px;
