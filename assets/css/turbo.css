@@ -3,7 +3,15 @@
         --card-height: 300px;
         --card-width: calc(var(--card-height) / 1.5);
       }
-
+/*
+.services-section {
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/bg/services.jpg);
+    height: 100%;
+    background-size: cover;
+    padding-top: 100px;
+}
+*/
 .categoListGrid  {
     padding: 110px 0px 115px 0px;
 }
@@ -644,6 +652,7 @@ div.countdown li span {
 
 .services-section {
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 @-webkit-keyframes border-transform {
@@ -1482,11 +1491,16 @@ ul.subcatego li {
 }
 **/
 
+
+.new-arrivals  .sections-title  {
+   margin: 0px auto 55px auto !important;
+}
+
 .sections-title {
 
     position: relative;
     text-align: center;
-    margin: 105px auto 55px auto;
+    margin-bottom:55px;
 }
 
 
@@ -1666,6 +1680,7 @@ ul.subcatego li {
     background-position: 100% 100%;
     height: 650px;
     background-attachment: fixed;
+    padding-top: 100px;
 }
 
 
