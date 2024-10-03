@@ -88,6 +88,7 @@
         arrows: false,
         fade: true,
         dots: true,
+        autoplay: true,
         easing: 'linear',
         speed: 2000,
     });

@@ -74,6 +74,24 @@ document.addEventListener('DOMContentLoaded', function () {
 /*****************************************************************************************************************/
 
 $(document).ready(function() {
+ // When a category is clicked
+    $('.goToCategoTarget').click(function(event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        var categoryId = $(this).data('category'); // Get the category ID
+
+        // Check if the clicked subcategory is currently visible
+        var $subcategory = $('#subcategory-' + categoryId);
+        
+        if ($subcategory.is(':visible')) {
+            // If it is visible, slide it up (hide) with 500ms duration
+            $subcategory.slideUp(300);
+        } else {
+            // Hide all other subcategories with 500ms duration
+            $('.subcategory').slideUp(300);
+            // Show the subcategory for the clicked category with 500ms duration
+            $subcategory.slideDown(300);
+        }
+    });
     
       // Function to get the search term from the URL
     function getSearchTerm() {
@@ -111,21 +129,7 @@ $(document).ready(function() {
       $('#copyright-year').text(currentYear);
     })();
     
-    
-// Hover event on the .categoBoxImg wrapper
-  $('.categoBox').hover(
-    function() {
-      // On mouse enter: hide the image by setting opacity to 0 and add a white background
-      $(this).css('background-color', 'white');
-      $(this).find('.categoBoxImg').css('opacity', '0');
-    }, 
-    function() {
-      // On mouse leave: reset the image opacity and remove the white background
-      $(this).css('background-color', 'transparent');
-      $(this).find('.categoBoxImg').css('opacity', '1');
-    }
-  );
-    
+
     
   function handleColorChange() {
     // When a color option is clicked
@@ -222,7 +226,7 @@ $(function() {
   }
 
 });
-
+/**
     
     $(function() {
   const second = 1000,
@@ -315,16 +319,9 @@ $(function() {
   });
 });
 
-
+**/
     
     
-$('.product-default-single').on('mouseover', function() {
-  $('.new-arrivals').css('height', '875px');
-  $('.product-tab-background').css('height', '725px');
-}).on('mouseout', function() {
-  $('.new-arrivals').css('height', ''); // Reset to original height
-  $('.product-tab-background').css('height', '650px'); // Reset to original height
-});
 
     
     
@@ -473,48 +470,7 @@ initializeTabs();
         }
     });  **/
 
- // Handle clicks on category boxes
- (function() {
-        // On click, go to the category target with URL parameters
-        $('.goToCategoTarget').click(function(event) {
-            event.preventDefault(); // Prevent default anchor click behavior
 
-            const categoryId = $(this).parent().data('category'); // Get the category ID
-            const targetUrl = `shop-grid-sidebar-left.html?category=${categoryId}`; // Create the target URL with category ID
-
-            // Redirect to the new page
-            window.location.href = targetUrl;
-        });
-
-        // Function to get query parameters from the URL
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
-
-        // Get the category ID from the URL
-        const categoryId = getQueryParam('category'); 
-
-        if (categoryId) {
-            const checkbox = $(`#catagory_${categoryId}`); // Find the corresponding checkbox
-            checkbox.prop('checked', true); // Check the checkbox
-            checkbox.change(); // Trigger change event if needed
-
-            // Scroll to the checkbox or its parent container
-            const targetElement = checkbox[0]; // Get the DOM element
-            if (targetElement) {
-                // Scroll smoothly to the element
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-                // Adjust for the 100px padding at the top after scrolling
-                setTimeout(function() {
-                    const scrollY = window.scrollY;
-                    window.scrollTo({ top: scrollY - 100, behavior: 'smooth' });
-                }, 500); // Delay to allow scrollIntoView to complete
-            }
-        }
-    })(); // End of the self-invoking function
-    
     
         
 });
