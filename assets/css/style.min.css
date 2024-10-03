@@ -10373,7 +10373,7 @@ input {
 
 
 .section-inner-bg {
-    background: #f8f9fa;
+    background: black;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -11491,7 +11491,7 @@ input {
 }
 .product-default-content {
     border-top: 2px solid #eee;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 .product-default-img {
     display: block;
@@ -11501,20 +11501,25 @@ input {
     object-fit: cover;
 }
 .product-default-link a {
-    display: block;
     color: #000;
-    margin-bottom: 15px;
-    line-height: 1.625;
+    margin-bottom: 5px;
+    line-height: 2em;
     font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .product-default-link a:hover {
     color:  var(--primary-color);
 }
 .product-default-price {
     display: block;
-    color:  var(--primary-color);
+    color:  black;
     font-size: 16px;
-        margin-bottom: 5px;
+        margin-bottom: 13px;
+    font-weight: 600;
 }
 .product-default-price-off {
     color: #8a8a8a;
@@ -12138,8 +12143,14 @@ input {
 .sidebar-single-widget {
     margin-top: 20px;
     margin-bottom: 40px;
-    padding-bottom: 37px;
-    border-bottom: 2px solid #f8f9fa;
+    background: white;
+
+}
+
+.sidebar-single-widget:last-child {
+   
+    background: transparent;
+
 }
 .sidebar-single-widget:first-child {
     margin-top: 0;
@@ -12150,7 +12161,7 @@ input {
     padding-bottom: 0;
 }
 .sidebar-title {
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 600;
 }
@@ -12284,7 +12295,7 @@ a.ui-button:active {
 .page-pagination li a {
     padding: 5px 10px;
     display: block;
-    background: #f1f1f1;
+    background: white;
     border-radius: 3px;
     font-weight: 500;
 }
@@ -14366,7 +14377,7 @@ table {
     transition: all 0.3s ease 0s;
 }
 .header-bottom {
-    background: #333;
+    background: #2e2e2e;
     position: relative;
 }
 .sticky-header.sticky {
@@ -15246,6 +15257,7 @@ table {
 .footer-contact {
     font-size: 14px;
     line-height: 25px;
+    color: white;
 }
 .customer-support {
     display: -webkit-box;
@@ -15335,6 +15347,7 @@ table {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 10px;
+    color: white;
 }
 .footer-widget-subscribe {
     margin-top: 30px;
@@ -15372,7 +15385,7 @@ table {
     display: block;
     font-weight: 400;
     font-size: 14px;
-    color: #666;
+    color: white;
 }
 .footer-menu-nav > li > a:hover {
     color:  var(--primary-color);
@@ -15401,7 +15414,7 @@ table {
     }
 }
 .copyright-area-text {
-    color: black;
+    color: white;
     margin-bottom: 10px;
 }
 @media (min-width: 768px) {
