@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,8 +25,8 @@
     <!-- Main CSS -->
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
-      <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-          <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -36,9 +37,17 @@
 
 </head>
 
-<body>
+<body> 
 
-       <!-- ...:::: Start Header Section:::... -->
+   
+        	<div class="progress-wrap">
+        	    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        	        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        	    </svg>
+        	</div>
+        
+    
+          <!-- ...:::: Start Header Section:::... -->
         <header class="header-section d-lg-block d-none">
             <!-- Start Header Top Area -->
             <div class="header-top">
@@ -579,701 +588,879 @@
             </div> <!-- End side widget wishlist Wrapper -->
 
         </div> <!-- ...:::: End side widget wishlist Section:::... -->
-        
-        
-        
-      <div class="breadcrumb-section">
-        <div class="breadcrumb-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between justify-content-md-between  align-items-center flex-md-row flex-column">
-                        <div class="breadcrumb-nav">
-                            <nav aria-label="breadcrumb">
-                                <ul>
-                                    <li><a href="accueil.html">Accueil</a></li>
-                                    <li><a href="#">Pages</a></li>
-                                    <li><a href="product-details-variable.html">Nom du produit</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+<div class="searchResult">
+    <div class="container">
+       
+       <div class="resultsInfoWrapper">
+        <div class="titleSection">
+            <h1 class="resultsTitle">Résultats de recherche pour : <span id="search-term"></span></h1>
+            <p class="resultsDescription">Vérifiez chaque page produit pour d'autres options d'achat. Le prix et d'autres détails peuvent varier en fonction de la taille et de la couleur du produit.</p>
         </div>
+        <div class="sort-select-list results-list">
+            <form action="#">
+                <fieldset>
+                    <select name="speed" id="speed">
+                        <option>Tri par note moyenne</option>
+                        <option>Tri par popularité</option>
+                        <option selected="selected">Tri par nouveauté</option>
+                        <option>Tri par prix : du moins cher au plus cher</option>
+                        <option>Tri par prix : du plus cher au moins cher</option>
+                        <option>Nom du produit : A - Z</option>
+
+                    </select>
+                </fieldset>
+            </form>
+          </div> <!-- End Sort Select Option --->
+        </div>
+        
+        
+        
+        
+         <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_1.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                               <img src="assets/images/results/turbo_products_image_12.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                              <img src="assets/images/results/turbo_products_image_8.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                              <img src="assets/images/results/turbo_products_image_11.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_2.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_4.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_5.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_6.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_7.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                       <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_8.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_9.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_10.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_11.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_12.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             
+         </div>
+         
+         
+           <div class="row">
+            
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_4.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                            <img src="assets/images/results/turbo_products_image_7.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                        <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro two quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+             <div class="col-lg-3">
+                 <!-- Start Product Defautlt Single -->
+                 <div class="product-default-single border-around boxShadowFix">
+                     <div class="product-img-warp">
+                         <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
+                             <img src="assets/images/results/turbo_products_image_1.jpg" alt="" class="product-default-img img-fluid">
+                         </a>
+                         <div class="product-action-icon-link">
+                             <ul>
+                                 <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
+
+                             </ul>
+                         </div>
+                     </div>
+                         <div class="product-default-content paddingFix-results">
+                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
+                                                    <div class="inventoryStatu">
+                                                        <div class="product-review">
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
+                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
+                                                            <span class="reviews-number">(30)</span>
+                                                        </div>
+                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
+                                                    </div>
+
+                                                    <span class="product-default-price">200.00 DH</span>
+
+                                                    <div class="productOnHover">
+                                                        <div class="addToCartWrapper">
+                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                 </div> <!-- End Product Defautlt Single -->
+             </div>
+             
+                 <!-- Start Pagination -->
+                    <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
+                        <ul>
+                            <li><a href="#">Précédent</a></li>
+<li><a class="active" href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">Suivant</a></li>
+
+                        </ul>
+                    </div> <!-- End Pagination -->
+         </div>
     </div>
+</div>
 
-  <div id="scroll-target"></div>
-
-    <!-- Start Product Details Section -->
-    <div class="product-details-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="product-details-gallery-area" data-aos="fade-up"  data-aos-delay="0">
-                        <div class="product-large-image product-large-image-horaizontal">
-                            <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/single_product/car_seat.png" alt="">
-                            </div>
-                            <div class="product-image-large-single zoom-image-hover">
-                              <img src="assets/images/single_product/02.jpg" alt="">
-                            </div>
-                            <div class="product-image-large-single zoom-image-hover">
-                               <img src="assets/images/single_product/03.jpg" alt="">
-                            </div>
-                            <div class="product-image-large-single zoom-image-hover">
-                               <img src="assets/images/single_product/04.jpg" alt="">
-                            </div>
-                            <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/single_product/05.jpg" alt="">
-                            </div>
-                            <div class="product-image-large-single zoom-image-hover">
-                                <img src="assets/images/single_product/06.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="product-image-thumb product-image-thumb-horizontal pos-relative hideForNow">
-                            <div class="zoom-active product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/01.jpg" alt="">
-                            </div>
-                            <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/02.jpg" alt="">
-                            </div>
-                            <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/03.jpg" alt="">
-                            </div>
-                            <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/04.jpg" alt="">
-                            </div>
-                            <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/05.jpg" alt="">
-                            </div>
-                            <div class="product-image-thumb-single">
-                                <img class="img-fluid" src="assets/images/single_product/06.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="product-details-content-area" data-aos="fade-up"  data-aos-delay="200">
-                        <!-- Start  Product Details Text Area-->
-                        <div class="product-details-text">
-                            <h4 class="title">Nonstick Dishwasher PFOA</h4>
-                            <div class="d-flex align-items-center">
-                                <div class="product-review">
-                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                    <span class="review-empty"><i class="fa fa-star"></i></span>
-                                </div>
-                                <a href="#" class="customer-review">(30)</a>
-                            </div>
-                            <div class="price">280.00 DH</div>
-                            <p>eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in</p>
-                        </div> <!-- End  Product Details Text Area-->
-                        <!-- Start Product Variable Area -->
-                        <div class="product-details-variable">
-                            <h4 class="title hideForNow">Options disponibles</h4>
-                            <!-- Product Variable Single Item -->
-                            <div class="variable-single-item hideForNow">
-                                <span>Color</span>
-                                <div class="product-variable-color">
-                                    <label for="product-color-red">
-                                        <input name="product-color" id="product-color-red" class="color-select" type="radio" checked>
-                                        <span class="product-color-red"></span>
-                                    </label>
-                                    <label for="product-color-tomato">
-                                        <input name="product-color" id="product-color-tomato" class="color-select" type="radio" checked>
-                                        <span class="product-color-tomato"></span>
-                                    </label>
-                                    <label for="product-color-green">
-                                        <input name="product-color" id="product-color-green" class="color-select" type="radio">
-                                        <span class="product-color-green"></span>
-                                    </label>
-                                    <label for="product-color-light-green">
-                                        <input name="product-color" id="product-color-light-green" class="color-select" type="radio">
-                                        <span class="product-color-light-green"></span>
-                                    </label>
-                                    <label for="product-color-blue">
-                                        <input name="product-color" id="product-color-blue" class="color-select" type="radio">
-                                        <span class="product-color-blue"></span>
-                                    </label>
-                                    <label for="product-color-light-blue">
-                                        <input name="product-color" id="product-color-light-blue" class="color-select" type="radio">
-                                        <span class="product-color-light-blue"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- Product Variable Single Item -->
-                            <div class="d-flex align-items-center">
-                                <div class="variable-single-item ">
-                                    <span>Quantité</span>
-                                    <div class="product-variable-quantity">
-                                        <input min="1" max="100" value="1" type="number">
-                                    </div>
-                                </div>
-
-                                <div class="product-add-to-cart-btn">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Ajouter au panier</a>
-                                </div>
-                            </div>
-
-                            <!-- Product Variable Single Item -->
-                            <div class="variable-single-item hideForNow">
-                                <span>Size</span>
-                                <select class="product-variable-size">
-                                    <option selected value="1">Taille</option>
-                                    <option value="2">s</option>
-                                    <option value="3">m</option>
-                                    <option value="4">l</option>
-                                    <option value="5">xl</option>
-                                    <option value="6">xxl</option>
-                                </select>
-                            </div>
-                        </div> <!-- End Product Variable Area -->
-                        <!-- Start  Product Details Meta Area-->
-                        <div class="product-details-meta mb-20">
-                            <ul>
-                                <li><a href="#"><i class="icon-heart"></i>Ajouter à la wishlist</a></li>
-                            </ul>
-                        </div> <!-- End  Product Details Meta Area-->
-                        <!-- Start  Product Details Social Area-->
-                        <div class="product-details-social">
-                            <ul>
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i>J'aime</a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i>Tweet</a></li>
-                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i>Sauvegarder</a></li>
-                                <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i>Sauvegarder</a></li>
-                                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i>Linked</a></li>
-                            </ul>
-                        </div> <!-- End  Product Details Social Area-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End Product Details Section -->
-
-    <!-- Start Product Content Tab Section -->
-    <div class="product-details-content-tab-section section-inner-bg section-top-gap-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="product-details-content-tab-wrapper" data-aos="fade-up"  data-aos-delay="0">
-
-                        <!-- Start Product Details Tab Button -->
-                        <ul class="nav tablist product-details-content-tab-btn d-flex justify-content-center">
-                            <li><a class="nav-link active" data-bs-toggle="tab" href="#description">
-                                    <h5>Description</h5>
-                                </a></li>
-                            <li><a class="nav-link" data-bs-toggle="tab" href="#specification">
-                                    <h5>Caractéristiques</h5>
-                                </a></li>
-                            <li><a class="nav-link" data-bs-toggle="tab" href="#review">
-                                    <h5>Avis (1)</h5>
-                                </a></li>
-                        </ul> <!-- End Product Details Tab Button -->
-
-                        <!-- Start Product Details Tab Content -->
-                        <div class="product-details-content-tab">
-                            <div class="tab-content">
-                                <!-- Start Product Details Tab Content Singel -->
-                                <div class="tab-pane active show" id="description">
-                                    <div class="single-tab-content-item">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. </p>
-                                        <p>Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget</p>
-                                        
-                                        <video width="640" height="360" controls>
-  <source src="your-video-file.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-                                    </div>
-                                </div> <!-- End Product Details Tab Content Singel -->
-                                <!-- Start Product Details Tab Content Singel -->
-                                <div class="tab-pane" id="specification">
-                                    <div class="single-tab-content-item">
-                                        <table class="table table-bordered mb-20">
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">Compositions</th>
-                                                    <td>Polyester</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Styles</th>
-                                                    <td>Girly</td>
-                                                <tr>
-                                                    <th scope="row">Propriétés</th>
-                                                    <td>Short Dress</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe placeat facere, libero minus vero molestias hic enim laboriosam eius quidem quia magnam at et ab dicta. Error veritatis porro dolore.</p>
-                                    </div>
-                                </div> <!-- End Product Details Tab Content Singel -->
-                                <!-- Start Product Details Tab Content Singel -->
-                                <div class="tab-pane" id="review">
-                                    <div class="single-tab-content-item">
-                                        <!-- Start - Review Comment -->
-                                        <ul class="comment">
-                                            <!-- Start - Review Comment list-->
-                                            <li class="comment-list">
-                                                <div class="comment-wrapper">
-                                                    <div class="comment-img">
-                                                        <img src="assets/images/user/image-1.png" alt="">
-                                                    </div>
-                                                    <div class="comment-content">
-                                                        <div class="comment-content-top">
-                                                            <div class="comment-content-left">
-                                                                <h6 class="comment-name">Ahmed El Idrissi</h6>
-                                                                <div class="product-review">
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content-right">
-                                                                <a href="#"><i class="fa fa-reply"></i>Répondre</a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="para-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora inventore dolorem a unde modi iste odio amet, fugit fuga aliquam, voluptatem maiores animi dolor nulla magnam ea! Dignissimos aspernatur cumque nam quod sint provident modi alias culpa, inventore deserunt accusantium amet earum soluta consequatur quasi eum eius laboriosam, maiores praesentium explicabo enim dolores quaerat! Voluptas ad ullam quia odio sint sunt. Ipsam officia, saepe repellat. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Start - Review Comment Reply-->
-                                                <ul class="comment-reply">
-                                                    <li class="comment-reply-list">
-                                                        <div class="comment-wrapper">
-                                                            <div class="comment-img">
-                                                                <img src="assets/images/user/image-2.png" alt="">
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <div class="comment-content-top">
-                                                                    <div class="comment-content-left">
-                                                                        <h6 class="comment-name">Fatima Zahra El Mansouri</h6>
-                                                                    </div>
-                                                                    <div class="comment-content-right">
-                                                                        <a href="#"><i class="fa fa-reply"></i>Répondre</a>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="para-content">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora inventore dolorem a unde modi iste odio amet, fugit fuga aliquam, voluptatem maiores animi dolor nulla magnam ea! Dignissimos aspernatur cumque nam quod sint provident modi alias culpa, inventore deserunt accusantium amet earum soluta consequatur quasi eum eius laboriosam, maiores praesentium explicabo enim dolores quaerat! Voluptas ad ullam quia odio sint sunt. Ipsam officia, saepe repellat. </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul> <!-- End - Review Comment Reply-->
-                                            </li> <!-- End - Review Comment list-->
-                                            <!-- Start - Review Comment list-->
-                                            <li class="comment-list">
-                                                <div class="comment-wrapper">
-                                                    <div class="comment-img">
-                                                        <img src="assets/images/user/image-3.png" alt="">
-                                                    </div>
-                                                    <div class="comment-content">
-                                                        <div class="comment-content-top">
-                                                            <div class="comment-content-left">
-                                                                <h6 class="comment-name">Youssef Ben Ali</h6>
-                                                                <div class="product-review">
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                                    <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="comment-content-right">
-                                                                <a href="#"><i class="fa fa-reply"></i>Répondre</a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="para-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora inventore dolorem a unde modi iste odio amet, fugit fuga aliquam, voluptatem maiores animi dolor nulla magnam ea! Dignissimos aspernatur cumque nam quod sint provident modi alias culpa, inventore deserunt accusantium amet earum soluta consequatur quasi eum eius laboriosam, maiores praesentium explicabo enim dolores quaerat! Voluptas ad ullam quia odio sint sunt. Ipsam officia, saepe repellat. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li> <!-- End - Review Comment list-->
-                                        </ul> <!-- End - Review Comment -->
-                                        <div class="review-form">
-                                            <div class="review-form-text-top">
-                                                <h5>Ajouter un avis</h5>
-                                                <p>Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont marqués *</p>
-                                            </div>
-
-                                            <form action="#" method="post">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="default-form-box mb-20">
-                                                            <label for="comment-name">Votre Nom<span>*</span></label>
-                                                            <input id="comment-name" type="text" placeholder="Enter your name" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="default-form-box mb-20">
-                                                            <label for="comment-email">Votre Email<span>*</span></label>
-                                                            <input id="comment-email" type="email" placeholder="Enter your email" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="default-form-box mb-20">
-                                                            <label for="comment-review-text">Votre avis<span>*</span></label>
-                                                            <textarea id="comment-review-text" placeholder="Écrire un avis" required></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="form-submit-btn" type="submit">Envoyer</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div> <!-- End Product Details Tab Content Singel -->
-                            </div>
-                        </div> <!-- End Product Details Tab Content -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End Product Content Tab Section -->
-
-    <!-- ...:::: Start Product  Section:::... -->
-    <div class="product-section section-top-gap-100">
-        <!-- Start Section Content -->
-        <div class="section-content-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="section-content">
-                        <h3 class="section-title text-center" data-aos="fade-up"  data-aos-delay="0">Produits associés</h3>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Section Content -->
-
-        <!-- Start Product Wrapper -->
-        <div class="product-wrapper" data-aos="fade-up"  data-aos-delay="200">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="product-default-slider product-default-slider-4grids-1row">
-                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_3.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                                            <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_4.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_5.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_6.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_7.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_8.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_9.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                           <!-- Start Product Defautlt Single -->
-                            <div class="product-default-single border-around boxShadowFix">
-                                                <div class="product-img-warp">
-                                                    <a href="product-details-variable.html#scroll-target" class="product-default-img-link">
-                                                        <img src="assets/images/results/turbo_products_image_10.jpg" alt="" class="product-default-img img-fluid">
-                                                    </a>
-                                                        <hr class="hrBorder">
-                                                    <div class="product-action-icon-link">
-                                                        <ul>
-                                                            <li><a href="wishlist.html"><i class="icon-heart"></i></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="product-default-content paddingFix-product">
-                                                    <h6 class="product-default-link"><a href="product-details-variable.html#scroll-target">Neque porro quisquam est qui dolorem ipsum</a></h6>
-                                                    <div class="inventoryStatu">
-                                                        <div class="product-review">
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-fill"><i class="fa fa-star"></i></span>
-                                                            <span class="review-empty"><i class="fa fa-star"></i></span>
-                                                            <span class="reviews-number">(30)</span>
-                                                        </div>
-                                                        <span class="inStock"><i class="fa-solid fa-check"></i>En stock</span>
-                                                    </div>
-
-                                                    <span class="product-default-price">200.00 DH</span>
-
-                                                    <div class="productOnHover">
-                                                        <div class="addToCartWrapper">
-                                                            <a href="product-details-variable.html#scroll-target" class="addToCart">Ajouter</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div> <!-- End Product Defautlt Single -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Product Wrapper -->
-    </div> <!-- ...:::: End Product Section:::... -->
-
-  
+       
         <!-- ...:::: Start Footer Section:::... -->
         <footer class="footer-section section-top-gap-100">
-              <!-- Start Footer Top Area -->
+            <!-- Start Footer Top Area -->
             <div class="footer-top section-inner-bg">
                 <div class="container">
                     <div class="row">
@@ -1316,7 +1503,7 @@
                                             <p>sales@ecommerce.turbo-accessories.com</p>
                                         </li>
                                         <li> 
-                                        <div class="footer-menu">
+                                       <div class="footer-menu">
                                                 <ul class="footer-menu-nav">
                                                     <li><a href="accueil.html">Accueil</a></li>
                                                     <li><a href="contact.html#scroll-target">Contactez-nous</a></li>
@@ -1353,12 +1540,12 @@
                 </div>
             </div> <!-- End Footer Top Area -->
             <!-- Start Footer Bottom Area -->
-            <div class="footer-bottom productPageTarget">
+            <div class="footer-bottom">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-md-12">
                             <div class="copyright-area">
-                                <p class="copyright-area-text">Copyright &copy; 2024 <a class="copyright-link" href="accueil.html">Turbo</a></p>
+                                <p class="copyright-area-text">Copyright &copy; <span id="copyright-year"></span> <a class="copyright-link" href="accueil.html">Turbo</a></p>
                             </div>
                         </div>
                     </div>
@@ -1366,16 +1553,18 @@
             </div> <!-- End Footer Bottom Area -->
         </footer> <!-- ...:::: End Footer Section:::... -->
 
-    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
-    <!-- Global Vendor, plugins JS -->
-    <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+
+        <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+        <!-- Global Vendor, plugins JS -->
+        <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/jquery-ui.min.js"></script> -->
 
-    <!--Plugins JS-->
-    <!-- <script src="assets/js/plugins/slick.min.js"></script>
+        <!--Plugins JS-->
+        <!-- <script src="assets/js/plugins/slick.min.js"></script>
     <script src="assets/js/plugins/material-scrolltop.js"></script>
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <script src="assets/js/plugins/jquery.zoom.min.js"></script>
@@ -1383,14 +1572,13 @@
     <script src="assets/js/plugins/aos.min.js"></script>
     <script src="assets/js/plugins/ajax-mail.js"></script> -->
 
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
+        <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/plugins.min.js"></script>
 
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-
-
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/turbo.js"></script>
 
 </body>
 

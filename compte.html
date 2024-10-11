@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Turbo</title>
+    <title>Turbo</title>
 
     <!-- ::::::::::::::Favicon icon::::::::::::::-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
@@ -36,10 +37,12 @@
     <link rel="stylesheet" href="assets/css/turbo.css">
 
 
+
 </head>
 
 <body>
 
+   
         <!-- ...:::: Start Header Section:::... -->
         <header class="header-section d-lg-block d-none">
             <!-- Start Header Top Area -->
@@ -581,8 +584,10 @@
             </div> <!-- End side widget wishlist Wrapper -->
 
         </div> <!-- ...:::: End side widget wishlist Section:::... -->
-        
-        
+
+  <div id="scroll-target"></div>
+    
+    
          <div class="breadcrumb-section">
         <div class="breadcrumb-wrapper">
             <div class="container">
@@ -593,7 +598,7 @@
                                 <ul>
                                     <li><a href="accueil.html">Accueil</a></li>
                                     <li><a href="#">Pages</a></li>
-                                    <li><a href="wishlist.html">Liste de souhaits</a></li>
+                                    <li><a href="compte.html">Compte</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -603,74 +608,101 @@
         </div>
     </div>
 
-  <div id="scroll-target"></div>
-   
-  
-    <!-- ...:::: Start Wishlist Section:::... -->
-    <div class="wishlist-section">
-        <!-- Start Cart Table -->
-        <div class="wishlish-table-wrapper"  data-aos="fade-up"  data-aos-delay="0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="table_desc">
+    <!-- ...:::: Start Account Dashboard Section:::... -->
+    <div class="account_dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <!-- Nav tabs -->
+                    <div class="dashboard_tab_button" data-aos="fade-up" data-aos-delay="0">
+                        <ul role="tablist" class="nav flex-column dashboard-list">
+                            <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active"><i class="fa-solid fa-bars"></i>&nbsp; Tableau de bord</a></li>
+                            <li> <a href="#orders" data-bs-toggle="tab" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>&nbsp;  Commandes</a></li>
+                            <li><a href="#downloads" data-bs-toggle="tab" class="nav-link"><i class="fa-regular fa-heart"></i>&nbsp;  Wishlist</a></li>
+                            <li><a href="#account-details" data-bs-toggle="tab" class="nav-link"><i class="fa-regular fa-user"></i>&nbsp; Détails du compte</a></li>
+                            <li><a href="login.html" class="nav-link"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp; Déconnexion</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
+                        <div class="tab-pane fade show active" id="dashboard">
+                            <h4>Tableau de bord</h4>
+                            <p>Depuis le tableau de bord de votre compte, vous pouvez facilement vérifier et afficher vos commandes récentes et modifier votre mot de passe et les détails de votre compte.</p>
+                        </div>
+                        <div class="tab-pane fade" id="orders">
+                            <h4>Commandes</h4>
                             <div class="table_page table-responsive">
                                 <table>
-                                    <!-- Start Wishlist Table Head -->
                                     <thead>
-                                                                <tr>
-                                <th class="product_remove">Supprimer</th>
-                                <th class="product_thumb">Image</th>
-                                <th class="product_name">Produit</th>
-                                <th class="product-price">Prix</th>
-                                <th class="product_stock">État du stock</th>
-                                <th class="product_addcart">Ajouter au panier</th>
-                            </tr>
-
-                                    </thead> <!-- End Cart Table Head -->
+                                        <tr>
+                                            <th>Commande</th>
+                                            <th>Date</th>
+                                            <th>Statut</th>
+                                            <th>Total</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
-                                        <!-- Start Wishlist Single Item-->
                                         <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                            <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_1.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="product-details-default.html">Handbag fringilla</a></td>
-                                            <td class="product-price">165.00 DH</td>
-                                            <td class="product_stock">En stock</td>
-<td class="product_addcart"><a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Ajouter au panier</a></td>
-
-                                        </tr> <!-- End Wishlist Single Item-->
-                                        <!-- Start Wishlist Single Item-->
+                                            <td>1</td>
+                                            <td>Mai 10, 2022</td>
+                                            <td><span class="success">Terminée</span></td>
+                                            <td>105,00 DH pour 1 article</td>
+                                            <td><a href="" class="view">Voir les détails</a></td>
+                                        </tr>
                                         <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                            <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_2.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="product-details-default.html">Handbags justo</a></td>
-                                            <td class="product-price">90.00 DH</td>
-                                           <td class="product_stock">En stock</td>
-<td class="product_addcart"><a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Ajouter au panier</a></td>
-
-                                        </tr> <!-- End Wishlist Single Item-->
-                                        <!-- Start Wishlist Single Item-->
-                                        <tr>
-                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                            <td class="product_thumb"><a href="product-details-default.html"><img src="assets/images/products_images/aments_products_image_3.jpg" alt=""></a></td>
-                                            <td class="product_name"><a href="product-details-default.html">Handbag elit</a></td>
-                                            <td class="product-price">280.00 DH</td>
-                                            <td class="product_stock redStatu">Épuisé</td>
-                                            <td class="product_addcart"><a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart" class="notInStock">Ajouter au panier</a></td>
-                                        </tr> <!-- End Wishlist Single Item-->
+                                            <td>2</td>
+                                            <td>Mai 10, 2022</td>
+                                            <td>En cours de traitement</td>
+                                            <td>70.00 DH for 1 article</td>
+                                            <td><a href="" class="view">Voir les détails</a></td>
+                                        </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="downloads">
+                            <h4>Wishlist</h4>
+                            <div class="table_page table-responsive">
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="address">
+                            <p>The following addresses will be used on the checkout page by default.</p>
+                            <h5 class="billing-address">Billing address</h5>
+                            <a href="#" class="view">Edit</a>
+                            <p><strong>Bobby Jackson</strong></p>
+                            <address>
+                                Address: Your address goes here.
+                            </address>
+                        </div>
+                        <div class="tab-pane fade" id="account-details">
+                            <h3>Détails du compte</h3>
+                            <div class="login">
+                                <div class="login_form_container">
+                                    <div class="account_login_form">
+                <ul>
+                    <li><span>Nom complet</span><span>Turbo Entreprise</span></li>
+                    <li><span>Email</span><span>sales@ecommerce.turbo-accessories.com</span></li>
+                    <li><span>Phone</span><span>05 22 44 39 26</span></li>
+                    <li><span>Adress</span><span>18-22 Boulevard de Khouribga, Casablanca 20250, Morocc</span></li>
+                    <li><span>Mot de passe</span><span>****************</span></li>
+                    <li><button class="updateAccountInfo">Mettre à jour</button></li>
+                </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- End Cart Table -->
-    </div> <!-- ...:::: End Wishlist Section:::... -->
+        </div>
+    </div> <!-- ...:::: End Account Dashboard Section:::... -->
 
     <!-- ...:::: Start Footer Section:::... -->
-        <footer class="footer-section section-top-gap-100">
-           <!-- Start Footer Top Area -->
+    <footer class="footer-section section-top-gap-100">
+              <!-- Start Footer Top Area -->
             <div class="footer-top section-inner-bg">
                 <div class="container">
                     <div class="row">
@@ -750,18 +782,18 @@
                 </div>
             </div> <!-- End Footer Top Area -->
             <!-- Start Footer Bottom Area -->
-            <div class="footer-bottom wishlistPageTarget">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="copyright-area">
-                                <p class="copyright-area-text">Copyright &copy; 2024 <a class="copyright-link" href="accueil.html">Turbo</a></p>
-                            </div>
+        <div class="footer-bottom accountPageTarget">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="copyright-area">
+                            <p class="copyright-area-text">Copyright &copy; 2024 <a class="copyright-link" href="accueil.html">Turbo</a></p>
                         </div>
                     </div>
                 </div>
-            </div> <!-- End Footer Bottom Area -->
-        </footer> <!-- ...:::: End Footer Section:::... -->
+            </div>
+        </div> <!-- End Footer Bottom Area -->
+    </footer> <!-- ...:::: End Footer Section:::... -->
 
     <!-- ::::::::::::::All JS Files here :::::::::::::: -->
     <!-- Global Vendor, plugins JS -->
@@ -785,6 +817,7 @@
     <script src="assets/js/plugins.min.js"></script>
 
     <!-- Main JS -->
+    <script src="assets/js/turbo.js"></script>
     <script src="assets/js/main.js"></script>
 
 

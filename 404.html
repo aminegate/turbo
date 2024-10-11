@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -26,6 +26,9 @@
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
@@ -36,8 +39,7 @@
 
 <body>
 
-   
-        <!-- ...:::: Start Header Section:::... -->
+   <!-- ...:::: Start Header Section:::... -->
         <header class="header-section d-lg-block d-none">
             <!-- Start Header Top Area -->
             <div class="header-top">
@@ -45,31 +47,31 @@
                     <div class="row d-flex justify-content-between align-items-center">
                         <div class="col-6">
                             <div class="header-top--left">
-                                <span>Bienvenue chez Turbo</span>
+                                <span>Bienvenue M. Admin</span>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="header-top--right">
                                 <!-- Start Header Top Menu -->
                                 <ul class="header-user-menu">
-                                   <li class="has-user-dropdown">
-                                       <div class="colorSwitch">
-                                           <a href="#">Choisissez une couleur</a>
-                                          <ul class="color-grid user-sub-menu">
-    <li class="color-option is-selected" data-color="#ebba31"></li>
-    <li class="color-option" data-color="#5B00B7"></li>
-    <li class="color-option" data-color="#34c400"></li>
-  </ul>
-                                     </div>
-                                      
+                                    <li class="has-user-dropdown">
+                                        <div class="colorSwitch">
+                                            <a href="#" class="removeClick">Choisissez une couleur</a>
+                                            <ul class="color-grid user-sub-menu">
+                                                <li class="color-option is-selected" data-color="#ebba31"></li>
+                                                <li class="color-option" data-color="#5B00B7"></li>
+                                                <li class="color-option" data-color="#34c400"></li>
+                                            </ul>
+                                        </div>
+
                                     </li>
-                                   
+
                                     <li class="has-user-dropdown">
                                         <a href="#">Paramètres</a>
                                         <!-- Header Top Menu's Dropdown -->
                                         <ul class="user-sub-menu">
-                                            <li><a href="my-account.html#scroll-target">Mon Compte</a></li>
-                                            <li><a href="cart.html#scroll-target">Panier</a></li>
+                                            <li><a href="compte.html">Mon Compte</a></li>
+                                            <li><a href="panier.html">Panier</a></li>
                                             <li><a href="wishlist.html#scroll-target">Wishlist</a></li>
                                             <li><a href="#">Déconnexion</a></li>
                                         </ul>
@@ -88,13 +90,13 @@
                         <div class="col-3">
                             <!-- Logo Header -->
                             <div class="header-logo">
-                                <a href="main.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                                <a href="accueil.html"><img src="assets/images/logo/logo.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-6">
                             <!-- Start Header Search -->
                             <div class="header-search">
-                                <form action="results.html" method="get" id="search-form">
+                                <form action="resultats.html" method="get" id="search-form">
                                     <div class="header-search-box default-search-style d-flex">
                                         <input id="search-query" name="q" class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Recherchez dans tout le magasin ici ..." required>
                                         <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
@@ -127,501 +129,480 @@
             <div class="header-bottom sticky-header">
                 <div class="container">
                     <div class="row">
-                            <!-- Header Main Menu -->
-                            <div class="dropDownCatego col-lg-3">
-                                                <a href="shop-grid-sidebar-left.html#scroll-target" class="dropDownCatego-name"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Catégories populaires</a>
-                                                        <ul class="hoverToOpen">
-                                                            <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">ACCOUDOIRE<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                  <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
+                        <!-- Header Main Menu -->
+                        <div class="dropDownCatego col-lg-3">
+                            <a href="boutique.html" class="dropDownCatego-name"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Catégories populaires</a>
+                            <ul class="hoverToOpen">
+                                <li>
+                                   <a href="boutique.html#scroll-target">Accessoires intérieurs<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
 
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat01.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez l'accoudoir</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                            
-                                                            
-                                                             <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">CEINTURE<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
-
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat02.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez la ceinture</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                             
-                                                             
-                                                              <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">BALAIS<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
-
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat03.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez le balai</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                             
-                                                             
-                                                             
-                                                              <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">VOLANT<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                  <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
-
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat04.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez le volant</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                             
-                                                             
-                                                              <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">DEFLECTEUR<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
-
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat05.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez le deflecteur</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                             
-                                                             
-                                                             
-                                                              <li>
-                                                                <a href="shop-grid-sidebar-left.html#scroll-target">ENJOLIVEUR<i class="fa-solid fa-angle-right"></i></a>
-                                                                <ul class="has-submenu">
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 1</span>
-
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                  <span>Sous-catégorie 2</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                   <li class="has-submenu-wrapper">
-                                                                   <span>Sous-catégorie 3</span>
-                                                                    <a href="#">Item 1</a>
-                                                                    <a href="#">Item 2</a>
-                                                                    <a href="#">Item 3</a>
-                                                                    <a href="#">Item 4</a>
-                                                                    <a href="#">Item 5</a>
-                                                                   </li>
-                                                                    <li class="has-submenu-wrapper">
-                                                                        <a href="#" class="menu-catego-link"></a>
-                                                                        <img src="assets/images/menu/cat06.jpg" alt="category-image" class="menu-catego-deal">
-                                                                           <span class="catego-text-one">Uniquement Ce Mois-ci</span>
-                                                                            <span class="catego-text-two">Achetez l'enjoliveur</span>
-                                                                            <span class="catego-price">À partir de 140DH</span>
-                                                                        <button class="shopNow">Achetez Maintenant</button>
-                                                                    </li>  
-                                                              </ul>
-                                                            </li>
-                                                              
-                                                            
-                                                            
-                                                      
-                                                   
-                                                </ul>
-                                            </div>
-                            
-                            <div class="main-menu col-lg-7">
-                                <nav>
-                                    <ul class="navMenu">
-                                        <li class="has-dropdown">
-                                            <a class="active home-menu-link" href="main.html">Accueil</a>
-                                            <!-- Sub Menu 
-                                        <ul class="sub-menu">
-                                        </ul>-->
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
                                         </li>
-                                        <li>
-                                            <a href="category.html#scroll-target">Catégorie</a>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Promotions</a>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Nouveautés</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact-us.html#scroll-target">Contact</a>
-                                        </li>
-                                        
-                                        
-                                        <li>
-                                            <a href="#">Autres Pages</a>
-                                            <ul class="sub-menu">
-                                                    <li><a href="404.html#scroll-target">404 Page</a></li>
-                                                    <li><a href="checkout.html#scroll-target">Page de paiement</a></li>
-                                                </ul>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat01.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez l'accoudoir</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
                                         </li>
                                     </ul>
-                                </nav>
-                            </div> <!-- Header Main Menu Start -->
-                            
-                            
-                                           <div class="menu-call col-lg-2">
-                                              <div class="menu-call-container">
-                                               <div class="menu-call-icon"><i class="fa-solid fa-headset"></i></div>
-                                                <div class="menu-call-wrapper">
-                                                    <span>05 22 44 39 26</span>
-                                                    <span>Appelez-nous</span>
-                                                </div>
-                                                </div>
-                                            </div>
+                                </li>
+
+
+                                <li>
+                                    <a href="boutique.html#scroll-target">Accessoires Extérieurs<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
+
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat02.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez la ceinture</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="boutique.html#scroll-target">Accessoires de Tuning<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
+
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat03.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez le balai</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="boutique.html#scroll-target">Audio et vidéo<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
+
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat04.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez le volant</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                     <a href="boutique.html#scroll-target">Lubrifiants et Additifs<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
+
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat05.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez le deflecteur</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                                <li>
+                                     <a href="boutique.html#scroll-target">Pneus & Jantes<i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="has-submenu">
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 1</span>
+
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 2</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <span>Sous-catégorie 3</span>
+                                            <a href="#">Item 1</a>
+                                            <a href="#">Item 2</a>
+                                            <a href="#">Item 3</a>
+                                            <a href="#">Item 4</a>
+                                            <a href="#">Item 5</a>
+                                        </li>
+                                        <li class="has-submenu-wrapper">
+                                            <a href="#" class="menu-catego-link"></a>
+                                            <img src="assets/images/menu/cat06.jpg" alt="category-image" class="menu-catego-deal">
+                                            <span class="catego-text-one">Uniquement Ce Mois-ci</span>
+                                            <span class="catego-text-two">Achetez l'enjoliveur</span>
+                                            <span class="catego-price">À partir de 140DH</span>
+                                            <button class="shopNow">Achetez Maintenant</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="main-menu col-lg-7">
+                            <nav>
+                                <ul class="navMenu">
+                                    <li class="has-dropdown">
+                                        <a class="active home-menu-link" href="accueil.html">Accueil</a>
+                                        <!-- Sub Menu 
+                                        <ul class="sub-menu">
+                                        </ul>-->
+                                    </li>
+                                    <li>
+                                        <a href="categorie.html">Catégorie</a>
+                                    </li>
+                                    <li>
+                                        <a href="nouveaute.html">Nouveauté</a>
+                                    </li>
+                                    <li>
+                                        <a href="promotion.html">Promotions</a>
+                                    </li>
+                                    <li>
+                                        <a href="famille.html">Famille</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html#scroll-target">Contact</a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#">Autres Pages</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="404.html#scroll-target">404 Page</a></li>
+                                            <li><a href="paiement.html#scroll-target">Page de paiement</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> <!-- Header Main Menu Start -->
+
+
+                        <div class="menu-call col-lg-2">
+                            <div class="menu-call-container">
+                                <div class="menu-call-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div class="menu-call-wrapper">
+                                    <span>05 22 44 39 26</span>
+                                    <span>Appelez-nous</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div> <!-- End Bottom Area -->
         </header> <!-- ...:::: End Header Section:::... -->
-        
-           <!-- ...:::: Start side widget Addcart Section :::... -->
-    <div id="offcanvas-add-cart" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
-        <!-- Start Offcanvas Header -->
-        <div class="offcanvas-header text-end">
-            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
-        </div> <!-- End side widget Header -->
 
-        <!-- Start  side widget Addcart Wrapper -->
-        <div class="offcanvas-add-cart-wrapper">
-           <h4 class="offcanvas-title">Panier</h4>
+        <!-- ...:::: Start side widget Addcart Section :::... -->
+        <div id="offcanvas-add-cart" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
+            <!-- Start Offcanvas Header -->
+            <div class="offcanvas-header text-end">
+                <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+            </div> <!-- End side widget Header -->
 
-            <ul class="offcanvas-cart">
-                <li class="offcanvas-cart-item-single">
-                    <div class="offcanvas-cart-item-block">
-                        <a href="#" class="offcanvas-cart-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_7.jpg" alt="" class="offcanvas-cart-image">
-                        </a>
-                        <div class="offcanvas-cart-item-content">
-                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-cart-item-details">
-                                <span class="offcanvas-cart-item-details-quantity">1 x </span>
-                                <span class="offcanvas-cart-item-details-price">149.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-cart-item-delete text-end">
-                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-                <li class="offcanvas-cart-item-single">
-                    <div class="offcanvas-cart-item-block">
-                        <a href="#" class="offcanvas-cart-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_4.jpg" alt="" class="offcanvas-cart-image">
-                        </a>
-                        <div class="offcanvas-cart-item-content">
-                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-cart-item-details">
-                                <span class="offcanvas-cart-item-details-quantity">3 x </span>
-                                <span class="offcanvas-cart-item-details-price">500.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-cart-item-delete text-end">
-                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-                <li class="offcanvas-cart-item-single">
-                    <div class="offcanvas-cart-item-block">
-                        <a href="#" class="offcanvas-cart-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_5.jpg" alt="" class="offcanvas-cart-image">
-                        </a>
-                        <div class="offcanvas-cart-item-content">
-                            <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-cart-item-details">
-                                <span class="offcanvas-cart-item-details-quantity">1 x </span>
-                                <span class="offcanvas-cart-item-details-price">250.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-cart-item-delete text-end">
-                        <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-            </ul>
-            <div class="offcanvas-cart-total-price">
-                <span class="offcanvas-cart-total-price-text">Sous-total :</span>
-                <span class="offcanvas-cart-total-price-value">1899.00 DH</span>
-            </div>
-            <ul class="offcanvas-cart-action-button">
-               <li class="offcanvas-cart-action-button-list"><a href="cart.html" class="offcanvas-cart-action-button-link">Voir le panier</a></li>
-<li class="offcanvas-cart-action-button-list"><a href="checkout.html" class="offcanvas-cart-action-button-link">Passer à la caisse</a></li>
+            <!-- Start  side widget Addcart Wrapper -->
+            <div class="offcanvas-add-cart-wrapper">
+                <h4 class="offcanvas-title">Panier</h4>
 
-            </ul>
-        </div> <!-- End  side widget Addcart Wrapper -->
-
-    </div> <!-- ...:::: End  side widget Addcart Section :::... -->
-
-    <!-- ...:::: Start side widget wishlist Section:::... -->
-    <div id="offcanvas-wishlish" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
-        <!-- Start Offcanvas Header -->
-        <div class="offcanvas-header text-end">
-            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
-        </div> <!-- ENd Offcanvas Header -->
-
-        <!-- Start side widget wishlist Wrapper -->
-        <div class="offcanvas-wishlist-wrapper">
-            <h4 class="offcanvas-title">Wishlist</h4>
-            <ul class="offcanvas-wishlist">
-                <li class="offcanvas-wishlist-item-single">
-                    <div class="offcanvas-wishlist-item-block">
-                        <a href="#" class="offcanvas-wishlist-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_1.jpg" alt="" class="offcanvas-wishlist-image">
-                        </a>
-                        <div class="offcanvas-wishlist-item-content">
-                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-wishlist-item-details">
-                                <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
-                                <span class="offcanvas-wishlist-item-details-price">349.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-wishlist-item-delete text-end">
-                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-                <li class="offcanvas-wishlist-item-single">
-                    <div class="offcanvas-wishlist-item-block">
-                        <a href="#" class="offcanvas-wishlist-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_3.jpg" alt="" class="offcanvas-wishlist-image">
-                        </a>
-                        <div class="offcanvas-wishlist-item-content">
-                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-wishlist-item-details">
-                                <span class="offcanvas-wishlist-item-details-quantity">3 x </span>
-                                <span class="offcanvas-wishlist-item-details-price">500.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-wishlist-item-delete text-end">
-                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-                <li class="offcanvas-wishlist-item-single">
-                    <div class="offcanvas-wishlist-item-block">
-                        <a href="#" class="offcanvas-wishlist-item-image-link">
-                            <img src="assets/images/products_images/aments_products_image_2.jpg" alt="" class="offcanvas-wishlist-image">
-                        </a>
-                        <div class="offcanvas-wishlist-item-content">
-                            <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
-                            <div class="offcanvas-wishlist-item-details">
-                                <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
-                                <span class="offcanvas-wishlist-item-details-price">350.00 DH</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offcanvas-wishlist-item-delete text-end">
-                        <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="offcanvas-wishlist-action-button">
-                <li class="offcanvas-wishlist-action-button-list"><a href="wishlist.html" class="offcanvas-wishlist-action-button-link">Voir la Wishlist</a></li>
-
-            </ul>
-        </div> <!-- End side widget wishlist Wrapper -->
-
-    </div> <!-- ...:::: End side widget wishlist Section:::... -->
-
-        <!-- ...:::: Start Hero Area Section:::... -->
-        <div class="hero-area hideForNow">
-            <div class="hero-area-wrapper hero-slider-dots fix-slider-dots">
-                <!-- Start Hero Slider Single -->
-                <div class="hero-area-single">
-                    <div class="hero-area-bg">
-                        <img class="hero-img" src="assets/images/slider_images/home_1/aments_home_1_slider_1.jpg" alt="">
-                    </div>
-                    <div class="hero-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-10 col-md-8 col-xl-6">
-                                    <h5>Meilleure qualité mondiale</h5>
-<h2>Volant Lorem Ipsum</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
-<a href="product-details-variable.html#scroll-target" class="hero-button">Achetez maintenant</a>
-
+                <ul class="offcanvas-cart">
+                    <li class="offcanvas-cart-item-single">
+                        <div class="offcanvas-cart-item-block">
+                            <a href="#" class="offcanvas-cart-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_7.jpg" alt="" class="offcanvas-cart-image">
+                            </a>
+                            <div class="offcanvas-cart-item-content">
+                                <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-cart-item-details">
+                                    <span class="offcanvas-cart-item-details-quantity">1 x </span>
+                                    <span class="offcanvas-cart-item-details-price">149.00 DH</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- End Hero Slider Single -->
-                <!-- Start Hero Slider Single -->
-                <div class="hero-area-single">
-                    <div class="hero-area-bg">
-                        <img class="hero-img" src="assets/images/slider_images/home_1/aments_home_1_slider_2.jpg" alt="">
-                    </div>
-                    <div class="hero-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-10 col-md-8 col-xl-6">
-                                  <h5>Meilleure qualité mondiale</h5>
-<h2>Enjoliveurs Lorem Ipsum</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
-<a href="product-details-variable.html#scroll-target" class="hero-button">Achetez maintenant</a>
-
+                        <div class="offcanvas-cart-item-delete text-end">
+                            <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                    <li class="offcanvas-cart-item-single">
+                        <div class="offcanvas-cart-item-block">
+                            <a href="#" class="offcanvas-cart-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_4.jpg" alt="" class="offcanvas-cart-image">
+                            </a>
+                            <div class="offcanvas-cart-item-content">
+                                <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-cart-item-details">
+                                    <span class="offcanvas-cart-item-details-quantity">3 x </span>
+                                    <span class="offcanvas-cart-item-details-price">500.00 DH</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- End Hero Slider Single -->
-            </div>
-        </div> <!-- ...:::: End Hero Area Section:::... -->
+                        <div class="offcanvas-cart-item-delete text-end">
+                            <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                    <li class="offcanvas-cart-item-single">
+                        <div class="offcanvas-cart-item-block">
+                            <a href="#" class="offcanvas-cart-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_5.jpg" alt="" class="offcanvas-cart-image">
+                            </a>
+                            <div class="offcanvas-cart-item-content">
+                                <a href="#" class="offcanvas-cart-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-cart-item-details">
+                                    <span class="offcanvas-cart-item-details-quantity">1 x </span>
+                                    <span class="offcanvas-cart-item-details-price">250.00 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-cart-item-delete text-end">
+                            <a href="#" class="offcanvas-cart-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="offcanvas-cart-total-price">
+                    <span class="offcanvas-cart-total-price-text">Sous-total :</span>
+                    <span class="offcanvas-cart-total-price-value">1899.00 DH</span>
+                </div>
+                <ul class="offcanvas-cart-action-button">
+                    <li class="offcanvas-cart-action-button-list"><a href="panier.html" class="offcanvas-cart-action-button-link">Voir le panier</a></li>
+                    <li class="offcanvas-cart-action-button-list"><a href="paiement.html" class="offcanvas-cart-action-button-link">Passer à la caisse</a></li>
+
+                </ul>
+            </div> <!-- End  side widget Addcart Wrapper -->
+
+        </div> <!-- ...:::: End  side widget Addcart Section :::... -->
+
+        <!-- ...:::: Start side widget wishlist Section:::... -->
+        <div id="offcanvas-wishlish" class="offcanvas offcanvas-rightside offcanvas-add-cart-section">
+            <!-- Start Offcanvas Header -->
+            <div class="offcanvas-header text-end">
+                <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+            </div> <!-- ENd Offcanvas Header -->
+
+            <!-- Start side widget wishlist Wrapper -->
+            <div class="offcanvas-wishlist-wrapper">
+                <h4 class="offcanvas-title">Wishlist</h4>
+                <ul class="offcanvas-wishlist">
+                    <li class="offcanvas-wishlist-item-single">
+                        <div class="offcanvas-wishlist-item-block">
+                            <a href="#" class="offcanvas-wishlist-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_1.jpg" alt="" class="offcanvas-wishlist-image">
+                            </a>
+                            <div class="offcanvas-wishlist-item-content">
+                                <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-wishlist-item-details">
+                                    <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
+                                    <span class="offcanvas-wishlist-item-details-price">349.00 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-wishlist-item-delete text-end">
+                            <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                    <li class="offcanvas-wishlist-item-single">
+                        <div class="offcanvas-wishlist-item-block">
+                            <a href="#" class="offcanvas-wishlist-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_3.jpg" alt="" class="offcanvas-wishlist-image">
+                            </a>
+                            <div class="offcanvas-wishlist-item-content">
+                                <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-wishlist-item-details">
+                                    <span class="offcanvas-wishlist-item-details-quantity">3 x </span>
+                                    <span class="offcanvas-wishlist-item-details-price">500.00 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-wishlist-item-delete text-end">
+                            <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                    <li class="offcanvas-wishlist-item-single">
+                        <div class="offcanvas-wishlist-item-block">
+                            <a href="#" class="offcanvas-wishlist-item-image-link">
+                                <img src="assets/images/products_images/aments_products_image_2.jpg" alt="" class="offcanvas-wishlist-image">
+                            </a>
+                            <div class="offcanvas-wishlist-item-content">
+                                <a href="#" class="offcanvas-wishlist-item-link">Lorem Ipsum</a>
+                                <div class="offcanvas-wishlist-item-details">
+                                    <span class="offcanvas-wishlist-item-details-quantity">1 x </span>
+                                    <span class="offcanvas-wishlist-item-details-price">350.00 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-wishlist-item-delete text-end">
+                            <a href="#" class="offcanvas-wishlist-item-delete"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="offcanvas-wishlist-action-button">
+                    <li class="offcanvas-wishlist-action-button-list"><a href="wishlist.html" class="offcanvas-wishlist-action-button-link">Voir la Wishlist</a></li>
+
+                </ul>
+            </div> <!-- End side widget wishlist Wrapper -->
+
+        </div> <!-- ...:::: End side widget wishlist Section:::... -->
 
 
 <div id="scroll-target"></div>
+    
+    <div class="breadcrumb-section">
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between justify-content-md-between  align-items-center flex-md-row flex-column">
+                        <div class="breadcrumb-nav">
+                            <nav aria-label="breadcrumb">
+                                <ul>
+                                    <li><a href="main.html">Accueil</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ...:::: Start Error Section :::... -->
     <div class="error-section">
@@ -641,7 +622,7 @@
                                     </div>
                                 </form>
                             </div> <!-- End Header Search -->
-                            <a href="main.html" data-aos="fade-up"  data-aos-delay="800">Retour à la page d'accueil</a>
+                            <a href="accueil.html" data-aos="fade-up"  data-aos-delay="800">Retour à la page d'accueil</a>
                         </div>
                     </div>
                 </div>
@@ -661,7 +642,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-5">
                             <div class="footer-widget footer-widget-information" data-aos="fade-up" data-aos-delay="0">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logo/logo.png" alt="" class="img-fluid"></a>
+                                    <a href="accueil.html"><img src="assets/images/logo/logo_footer.png" alt="" class="img-fluid"></a>
                                 </div>
                                 <div class="footer-contact">
                                     <p>Turbo, fondée en 2006 à Casablanca, est un leader du marché des accessoires automobiles. Avec une équipe expérimentée, nous offrons des prestations de haute qualité et un large choix de produits au meilleur prix.</p>
@@ -696,16 +677,17 @@
                                         <li> <span>EMAIL</span>
                                             <p>sales@ecommerce.turbo-accessories.com</p>
                                         </li>
-                                        <li> <div class="footer-menu">
-                                    <ul class="footer-menu-nav">
-                                        <li><a href="main.html">Accueil</a></li>
-                                        <li><a href="contact-us.html#scroll-target">Contactez-nous</a></li>
-                                    </ul>
-                                    <ul class="footer-menu-nav">
-                                        <li><a href="#">Promotions</a></li>
-                                        <li><a href="my-account.html#scroll-target">Mon Compte</a></li>
-                                    </ul>
-                                </div>
+                                        <li> 
+                                     <div class="footer-menu">
+                                                <ul class="footer-menu-nav">
+                                                    <li><a href="accueil.html">Accueil</a></li>
+                                                    <li><a href="contact.html#scroll-target">Contactez-nous</a></li>
+                                                </ul>
+                                                <ul class="footer-menu-nav">
+                                                    <li><a href="promotion.html">Promotions</a></li>
+                                                    <li><a href="compte.html">Mon Compte</a></li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -719,12 +701,12 @@
                                   <span class="slashes">//&nbsp;<span class="slashesText">Venez nous rendre visite</span></span>
                                    <h3>Horaires d'ouverture</h3>
                                     <ul>
-                                        <li><span>Lundi</span><span>08:30AM - 18:30PM</span></li>
-                                        <li><span>Mardi</span><span>08:30AM - 18:30PM</span></li>
-                                        <li><span>Mercredi</span><span>08:30AM - 18:30PM</span></li>
-                                        <li><span>Jeudi</span><span>08:30AM - 18:30PM</span></li>
-                                        <li><span>Vendredi</span><span>08:30AM - 18:30PM</span></li>
-                                        <li><span>Samedi</span><span>08:30AM - 13:00PM</span></li>
+                                        <li><span>Lundi</span><span>09:00 AM - 18:30 PM</span></li>
+                                        <li><span>Mardi</span><span>09:00 AM - 18:30 PM</span></li>
+                                        <li><span>Mercredi</span><span>09:00 AM - 18:30 PM</span></li>
+                                        <li><span>Jeudi</span><span>09:00 AM - 18:30 PM</span></li>
+                                        <li><span>Vendredi</span><span>09:00 AM - 18:30 PM</span></li>
+                                        <li><span>Samedi</span><span>09:00 AM - 13:30 PM</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -738,7 +720,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-md-12">
                             <div class="copyright-area">
-                                <p class="copyright-area-text">Copyright &copy; 2024 <a class="copyright-link" href="index.html">Turbo</a></p>
+                                <p class="copyright-area-text">Copyright &copy; 2024 <a class="copyright-link" href="accueil.html">Turbo</a></p>
                             </div>
                         </div>
                     </div>
@@ -764,8 +746,10 @@
     <script src="assets/js/plugins/ajax-mail.js"></script> -->
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/turbo.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
