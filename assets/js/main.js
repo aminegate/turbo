@@ -84,26 +84,31 @@
     /******************************
      * Hero Slider - [Single Grid]
      *****************************/
-    $('.hero-area-wrapper').slick({
-        arrows: false,
-        fade: true,
-        dots: true,
-        autoplay: true,
-        easing: 'linear',
-        speed: 2000,
-    });
+$('.hero-area-wrapper').slick({
+    arrows: false,
+    infinite: true,
+    fade: true,
+    dots: true,
+    easing: 'linear',
+    pauseOnHover: false,    // Prevent pausing on hover
+    pauseOnFocus: false,    // Prevent pausing on click or focus
+    speed: 2000,
+    autoplay: true,         // Enable autoplay
+    autoplaySpeed: 1000     // Set autoplay speed (in milliseconds)
+});
+
 
     /************************************************
      * Product Slider - Style: Default [4 Grid, 1 Row]
      ***********************************************/
     $('.product-default-slider-4grids-1row').slick({
         arrows: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 4,
+        pauseOnHover: false, 
         slidesToScroll: 4,
         rows: 1,
         easing: 'ease-out',
-        speed: 1000,
         prevArrow: '<button type="button" class="default-slider-arrow default-slider-arrow--left prevArrow"><i class="fa fa-angle-left"></button>',
         nextArrow: '<button type="button"  class="default-slider-arrow default-slider-arrow--right nextArrow"><i class="fa fa-angle-right"></button>',
         responsive: [
@@ -136,6 +141,7 @@
         arrows: true,
         infinite: true,
         slidesToShow: 4,
+        pauseOnHover: false, 
         slidesToScroll: 4,
         rows: 1,
         easing: 'ease-out',
@@ -175,6 +181,7 @@
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+     pauseOnHover: false, 
         rows: 1,
         easing: 'ease-out',
         speed: 1000,
@@ -210,7 +217,9 @@
    $('.product-large-image-horaizontal').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+       pauseOnHover: false, 
         arrows: false,
+       infinite: true,
         fade: true,
         asNavFor: '.product-image-thumb-horizontal'
     });
@@ -218,6 +227,7 @@
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
+        infinite: true,
         arrows: true,
         asNavFor: '.product-large-image-horaizontal',
         prevArrow: '<button type="button" class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-left prevArrow"><i class="fa fa-angle-left"></i></button>',
@@ -255,13 +265,16 @@
    $('.product-large-image-vertical').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+       infinite: true,
         arrows: false,
+       pauseOnHover: false, 
         fade: true,
         asNavFor: '.product-image-thumb-vertical'
     });
     $('.product-image-thumb-vertical').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        infinite: true,
         focusOnSelect: true,
         arrows: true,
         vertical: true,
@@ -300,7 +313,9 @@
     /********************************
     *  Product Gallery - Image Zoom
     **********************************/
-    $('.zoom-image-hover').zoom();
+    $('.zoom-image-hover').zoom({
+    magnify: 0.3
+  });
 
     /***********************************
     * Gallery - Single Slider
@@ -309,6 +324,8 @@
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
+        infinite: true,
+        pauseOnHover: false, 
         arrows: true,
         prevArrow: '<button type="button" class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-left prevArrow"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button type="button"  class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-right nextArrow"><i class="fa fa-angle-right"></i></button>',
@@ -347,13 +364,16 @@
    $('.modal-product-image-large').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+       infinite: true,
         arrows: false,
+       pauseOnHover: false, 
         fade: true,
         asNavFor: '.modal-product-image-thumb'
     });
     $('.modal-product-image-thumb').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        pauseOnHover: false, 
         asNavFor: '.modal-product-image-large',
         focusOnSelect: true,
         prevArrow: '<button type="button" class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-left prevArrow"><i class="fa fa-angle-left"></i></button>',
@@ -370,7 +390,9 @@
    $('.blog-image-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+       infinite: true,
         focusOnSelect: true,
+       pauseOnHover: false, 
         arrows: true,
         prevArrow: '<button type="button" class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-left prevArrow"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button type="button"  class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-right nextArrow"><i class="fa fa-angle-right"></i></button>',
@@ -382,6 +404,7 @@
    $('.testimonial-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+       infinite: true,
         focusOnSelect: true,
         dots: true,
         arrows: false,
@@ -398,6 +421,7 @@
     $(function() {
   $("#slider-range").slider({
     range: true,
+      infinite: true,
     min: 0,
     max: 500,
     values: [75, 300],

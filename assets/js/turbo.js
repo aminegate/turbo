@@ -74,6 +74,37 @@ document.addEventListener('DOMContentLoaded', function () {
 /*****************************************************************************************************************/
 
 $(document).ready(function() {
+    
+ 
+    
+    $(".mulitpleColorProduct").slick({
+
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplay: true,
+        pauseOnHover: false, 
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false
+    });
+    
+        $(".serviceImgWrapper").slick({
+
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1000,
+            autoplay: true,
+            pauseOnHover: false, 
+             fade: true, // Enable fade effect
+            easing: 'Ease-In-Out',
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false
+        });
+    
  // When a category is clicked
     $('.goToCategoTarget').click(function(event) {
         event.preventDefault(); // Prevent default anchor click behavior
@@ -110,17 +141,34 @@ $(document).ready(function() {
    
 
 
-      // Check if the URL contains the hash for the empty div (e.g., #scroll-target)
-      if (window.location.hash === '#scroll-target') {
-        setTimeout(function() {
-          $('html, body').animate({
-            scrollTop: $('#scroll-target').offset().top 
-          }, 500, function() {
-            // After scrolling, remove the hash from the URL using history.replaceState
-            history.replaceState("", document.title, window.location.pathname);
-          });
-        }, 100); // Small delay to ensure the page is ready
-      }
+      // Add smooth scrolling to all links
+  $(".navMenu a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+    
+    
+    
+    
+    
+    
     
        (function() {
       // Get the current year
@@ -226,7 +274,7 @@ $(function() {
   }
 
 });
-/**
+
     
     $(function() {
   const second = 1000,
@@ -265,8 +313,34 @@ $(function() {
     }, 1000);
   });
 });
-
+    /**
     
+     (function($){
+            // Array of image URLs
+            const images = [
+                'assets/images/service/24-1.png',
+                'assets/images/service/24-2.png',
+                'assets/images/service/24-3.png'
+                // Add more images as needed
+            ];
+
+            // Function to get a new image every 24 hours
+            function getDailyImage() {
+                const now = new Date();
+                // Get the current day (number of days since Unix epoch)
+                const dayIndex = Math.floor(now.getTime() / (1000 * 60 * 60 * 24)) % images.length;
+                
+                // Set the image based on the day index
+                $('#dailyImage').attr('src', images[dayIndex]);
+            }
+
+            // Call the function to display the image
+            getDailyImage();
+
+        })(jQuery); **/ // Self-invoking function with jQuery passed as a parameter 
+    
+
+    /**
 $(function() {
   $(".quantity").each(function() {
     const $quantityContainer = $(this);
@@ -401,7 +475,7 @@ initializeTabs();
             }
 
             // Redirect to the main page
-            window.location.href = 'main.html';
+            window.location.href = 'accueil.html';
         } else {
             // Show error message if credentials are incorrect
             $('#errorMessage').show();
@@ -441,7 +515,6 @@ initializeTabs();
     // Call the function to start the process
     showPageAfterLoader();
 
-      /**  
   $('.category-checkbox').change(function() {
         var $this = $(this); // Reference to the current checkbox
         var $label = $this.closest('label');
@@ -468,10 +541,103 @@ initializeTabs();
             downIcon.show(); // Show the down icon for the current category
             upIcon.hide(); // Hide the up icon for the current category
         }
-    });  **/
+    }); 
 
 
+    $('.subcategory-item').on('click', function(e) {
+        e.preventDefault(); // Prevent the default anchor behavior
+
+        // Get data attributes
+        const categoryId = $(this).data('category');
+        const subcategoryId = $(this).data('subcategory');
+
+        // Redirect to the second page with parameters
+        window.location.href = `boutique.html?category=${categoryId}&subcategory=${subcategoryId}`;
+    });
     
+   // Function to get URL parameters
+    function getUrlParameter(name) {
+        const regex = new RegExp('[?&]' + name + '=([^&#]*)', 'i');
+        const results = regex.exec(window.location.href);
+        return results ? decodeURIComponent(results[1]) : null;
+    }
+
+    const categoryId = getUrlParameter('category');
+    const subcategoryId = getUrlParameter('subcategory');
+
+    // Check the main category checkbox and show its subcategories
+    if (categoryId) {
+        $(`#catagory_${categoryId}`).prop('checked', true);
+        // Show subcategories for the checked main category
+        const subcategories = $(`#catagory_${categoryId}`).closest('label').find('.subcatego');
+        subcategories.slideDown(); // Show subcategories
+    }
+
+    // Check the subcategory checkbox and apply font weight
+    if (subcategoryId) {
+        $(`#subCatego_${subcategoryId}`).prop('checked', true);
+        // Bold only the specific subcategory name
+        $(`#subCatego_${subcategoryId}`).closest('li').find('.subCategory-name').css('font-weight', 'bold');
+    }
+
+    // Toggle subcategories based on main category checkbox
+    $('.category-checkbox').change(function() {
+        const subcategories = $(this).closest('label').find('.subcatego');
+        
+        if ($(this).is(':checked')) {
+            subcategories.slideDown(); // Show subcategories
+        } else {
+            subcategories.slideUp(); // Hide subcategories
+            // Uncheck all subcategory checkboxes if the main category is unchecked
+            subcategories.find('.subCategory-checkbox').prop('checked', false);
+            subcategories.find('.subCategory-name').css('font-weight', 'normal'); // Reset font weight
+        }
+    });
+
+    // Subcategory click event
+    $('.subCategory-checkbox').change(function() {
+        const $subCategoryName = $(this).closest('li').find('.subCategory-name');
+        if ($(this).is(':checked')) {
+            $subCategoryName.css('font-weight', 'bold'); // Bold the name only for the clicked subcategory
+        } else {
+            $subCategoryName.css('font-weight', 'normal'); // Reset to normal if unchecked
+        }
+    });
+    
+    
+    
+     $('.familyRedirect').on('click', function(e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        
+        // Get the family name from the data attribute
+        const familyName = $(this).data('family');
+        
+        // Redirect to the second page with the family name as a query parameter
+        window.location.href = `boutique.html?family=${encodeURIComponent(familyName)}`;
+    });
+    
+        // Function to get query parameters
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Get the family name from the URL
+    const familyName = getQueryParam('family');
+
+    if (familyName) {
+        // Find the checkbox label with the matching data-family attribute and check its corresponding checkbox
+        const matchingCheckbox = $(`label[data-family="${familyName}"] input[type="checkbox"]`);
+
+        // Check the associated checkbox
+        if (matchingCheckbox.length > 0) {
+            matchingCheckbox.prop('checked', true);
+        }
+    }
+    
+    $('.removeClick').on('click', function(event) {
+                event.preventDefault(); // Prevent the default action
+            });
         
 });
 
